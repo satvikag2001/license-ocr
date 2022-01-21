@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'license_plate_web'
+    'license_plate_web',
+    'gunicorn'
 ]
 
 MIDDLEWARE = [
