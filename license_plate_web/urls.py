@@ -23,7 +23,7 @@ from license_plate_web import views
 appname = 'license_plate_web'
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.a, name = "a")
+    path('',views.a, name = "a"),
     path('home', views.home,name='home'),
     path('result', views.result, name='result'),
     
