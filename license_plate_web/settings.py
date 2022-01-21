@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-em9hkqdj^=wtul#bz-ixd3)^q%37s7eom4t9b@3x%539hvd0=$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 #AUTH_USER_MODEL = "license_plate_web.Car"

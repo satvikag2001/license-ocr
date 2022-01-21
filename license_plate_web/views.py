@@ -8,6 +8,8 @@ from django.core.files.storage import FileSystemStorage
 from .forms import *
 global name_of_file
 # our home page view
+def a(request):
+    return render(request,'a.html')
 def home(request):
     #print("---------------------------------------first-------------------------------")
     #print(request.method) 
