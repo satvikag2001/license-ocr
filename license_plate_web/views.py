@@ -6,7 +6,7 @@ from django.core.files.storage import FileSystemStorage
 #from django.http import HttpResponseRedirect
 #from django.core.urlresolvers import reverse
 from .forms import *
-global name_of_file
+#global name_of_file
 # our home page view
 def a(request):
     return render(request,'a.html')
@@ -15,7 +15,7 @@ def home(request):
     #print(request.method) 
     if request.method == "POST":
         form = CarForm( request.POST, request.FILES)
-        name_of_file = request.FILES["cars"]
+        #name_of_file = request.FILES["cars"]
         #print("before save")
         if form.is_valid():
             form.save()     
