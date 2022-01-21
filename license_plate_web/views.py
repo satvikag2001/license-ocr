@@ -16,10 +16,10 @@ def home(request):
     if request.method == "POST":
         form = CarForm( request.POST, request.FILES)
         name_of_file = request.FILES["cars"]
-        print("before save")
+        #print("before save")
         if form.is_valid():
             form.save()     
-            print("------------------ahhhh",form)
+            #print("------------------ahhhh",form)
 
             return redirect('result')
             #img_object = form.instance
@@ -39,9 +39,9 @@ import os
 def result(request):
     path = "media/images/"
     img_list = os.listdir(path)  
-    print(img_list)
+    #print(img_list)
     img = path+img_list[0]
-    print("--------------------ohhhh--------------",img)
+    #print("--------------------ohhhh--------------",img)
     result = getPredictions.getPredictions(img)
     os.remove(img)
     return render(request, 'result.html', {'result':result})
