@@ -20,4 +20,5 @@ tensorboard-plugin-wit==1.8.1
 tensorflow-cpu==2.7.0
 tensorflow-estimator==2.7.0
 tensorflow-io-gcs-filesystem==0.23.1
+whitenoise==5.3.0
 
