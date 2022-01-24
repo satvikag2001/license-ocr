@@ -1,1 +1,1 @@
-web: gunicorn license-plate-reader-ocr.wsgi --log-file -
+web: gunicorn license_plate_web.wsgi --log-file -
